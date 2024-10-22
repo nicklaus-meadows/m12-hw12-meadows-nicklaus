@@ -14,7 +14,7 @@ body {
   display: grid;
   grid-template-areas: 
   'header header header'
-  'nav     .     img_card__container'
+  'nav    .      img_card__container'
   'footer footer footer';
   grid-template-columns: 0.3fr 1fr 0.3fr;
   grid-template-rows: 100px 1f 60px;
@@ -80,6 +80,13 @@ body {
 
 .img_card__text {
   padding: 0 12px;
+}
+
+.img_card__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+  grid-template-rows: 350px;
+
 }
 
 .footer {
