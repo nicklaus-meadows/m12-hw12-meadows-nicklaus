@@ -11,9 +11,18 @@ body {
   margin: 0;
   box-sizing: border-box;
   min-height: 100vh;
+  display: grid;
+  grid-template-areas: 
+  'header header header'
+  'nav     .     img_card__container'
+  'footer footer footer';
+  grid-template-columns: 0.3fr 1fr 0.3fr;
+  grid-template-rows: 100px 1f 60px;
+  
 }
 
 .header {
+  grid-area: header;
   background-color: var(--primary);
   color: var(--white);
   display: grid;
@@ -28,6 +37,7 @@ body {
 }
 
 .nav__container {
+  grid-area: nav;
   box-shadow: var(--gray) 4px 4px 10px 2px;
   display: grid;
   row-gap: 24px;
@@ -73,6 +83,7 @@ body {
 }
 
 .footer {
+  grid-area: footer;
   display: grid;
   align-items: center;
   justify-items: center;
