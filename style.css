@@ -13,11 +13,15 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-areas: 
-  'header header header'
-  'nav    .      img_card__container'
-  'footer footer footer';
-  grid-template-columns: 0.3fr 1fr 0.3fr;
-  grid-template-rows: 100px 1f 60px;
+  'header header'
+  'nav    img_card__container'
+  'footer footer';
+  grid-template-columns: .3fr 1fr;
+  grid-template-rows: 150px 1fr 60px;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  
+  
   
 }
 
@@ -45,6 +49,12 @@ body {
   min-width: 200px;
   justify-items: center;
   padding: 12px 0 24px;
+  width: 300px;
+ 
+  
+  
+  
+  
 }
 
 .nav__link, .nav__link--active {
@@ -84,8 +94,18 @@ body {
 
 .img_card__container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: 350px;
+  row-gap: 35px;
+  column-gap: 15px;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  
+  
+  
+  
+  
 
 }
 
